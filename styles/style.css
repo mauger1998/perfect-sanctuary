@@ -84,7 +84,7 @@ h1 {
 }
 
 main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4745098039), rgba(0, 0, 0, 0.4745098039)), url(../public/images/hero-image.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4745098039), rgba(0, 0, 0, 0.4745098039)), url(../public/images/hero-image-transformed.png);
   background-size: cover;
   background-position: bottom;
   min-height: 95svh;
@@ -95,6 +95,11 @@ main .wrapper {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 500px) {
+  main .wrapper {
+    gap: 1rem;
+  }
 }
 main .wrapper .title {
   display: grid;
@@ -120,9 +125,19 @@ main .wrapper form {
   color: white;
   margin-block-start: 2rem;
 }
+@media (max-width: 500px) {
+  main .wrapper form {
+    margin-block-start: 1rem;
+  }
+}
 main .wrapper form fieldset {
   display: grid;
   gap: 1rem;
+}
+@media (max-width: 500px) {
+  main .wrapper form fieldset {
+    margin-block-start: 0.5rem;
+  }
 }
 main .wrapper form fieldset label {
   font-size: 24px;
@@ -130,12 +145,22 @@ main .wrapper form fieldset label {
   text-align: center;
   font-family: fancy;
 }
+@media (max-width: 500px) {
+  main .wrapper form fieldset label {
+    font-size: 20px;
+  }
+}
 main .wrapper form fieldset input {
   padding: 0.5rem;
   border-radius: 2rem;
   border: 1.5px solid white;
   background-color: transparent;
   margin-block-start: 2rem;
+}
+@media (max-width: 500px) {
+  main .wrapper form fieldset input {
+    margin-block-start: 0.25rem;
+  }
 }
 main .wrapper form fieldset input::-moz-placeholder {
   font-family: fancy;
@@ -156,6 +181,11 @@ main .wrapper form fieldset button {
   width: max-content;
   place-self: center;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  main .wrapper form fieldset button {
+    margin-block-start: 3rem;
+  }
 }
 main .wrapper form fieldset button::before {
   content: "";

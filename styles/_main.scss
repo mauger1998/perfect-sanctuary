@@ -2,7 +2,7 @@
 @use "./fonts";
 
 main {
-    background-image: linear-gradient(#00000079, #00000079), url(../public/images/hero-image.png);
+    background-image: linear-gradient(#00000079, #00000079), url(../public/images/hero-image-transformed.png);
     background-size:cover;
     background-position:bottom;
     min-height:95svh;
@@ -14,6 +14,10 @@ main {
         flex-direction: column;
 
         gap:2rem;
+
+        @media (max-width:500px) {
+            gap:1rem;
+        }
 
         .title {
             display:grid;
@@ -43,15 +47,26 @@ main {
         form {
             color:white;
             margin-block-start:2rem;
+            @media (max-width:500px) {
+                margin-block-start:1rem;
+            }
 
             fieldset {
                 display:grid;
                 gap:1rem;
+                @media (max-width:500px) {
+                    margin-block-start:0.5rem;
+                }
+                
                 label {
                     font-size:variables.$subline;
                     max-width:40ch;
                     text-align:center;
                     font-family:fancy;
+
+                    @media (max-width:500px) {
+                        font-size:20px;
+                    }
                 }
                 input {
                     padding:0.5rem;
@@ -59,6 +74,9 @@ main {
                     border:1.5px solid white;
                     background-color:transparent;
                     margin-block-start:2rem;
+                    @media (max-width:500px) {
+                        margin-block-start:0.25rem;
+                    }
 
                     &::placeholder {
                         font-family:fancy;
@@ -71,6 +89,9 @@ main {
                     border:none;
                     color:white;
                     margin-block-start:4rem;
+                    @media (max-width:500px) {
+                        margin-block-start:3rem;
+                    }
                     position:relative;
                     width:max-content;
                     place-self:center;
