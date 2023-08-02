@@ -1,0 +1,79 @@
+@use "./variables";
+
+@font-face {
+    font-family: fancy;
+    src: url("../Coldiac.ttf");
+}
+
+@font-face {
+    font-family: small-text;
+    src: url("../Arial.ttf");
+    font-weight: 700;
+}
+
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:small-text, sans-serif;
+
+}
+
+// Images & Icons
+
+img {
+    width:100%;
+
+    &.icon {
+        width:2rem;
+    }
+}
+// Images & Icons End
+
+// Links
+a {
+    text-decoration: none;
+    color:white;
+}
+
+// Links End
+
+// List
+ul {
+    list-style:none;
+}
+// List End
+
+// Section Layout
+
+section,
+main,
+header,
+footer {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        width:100%;
+        max-width:1440px;
+        padding:8rem 4rem;
+    }
+
+    @media (max-width:700px) {
+        .wrapper {
+            padding-inline:2rem;
+        }
+    }
+    @media (max-width:500px) {
+        .wrapper {
+            padding-inline:1rem;
+        }
+    }
+}
+// Section Layout End
+
