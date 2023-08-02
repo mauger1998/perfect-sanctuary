@@ -84,7 +84,7 @@ h1 {
 }
 
 main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4745098039), rgba(0, 0, 0, 0.4745098039)), url(../public/images/hero-image-transformed.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5215686275), rgba(0, 0, 0, 0.5215686275)), url(../public/images/hero-image-transformed.png);
   background-size: cover;
   background-position: bottom;
   min-height: 95svh;
@@ -151,11 +151,12 @@ main .wrapper form fieldset label {
   }
 }
 main .wrapper form fieldset input {
-  padding: 0.5rem;
+  padding: 0.75rem 0.5rem;
   border-radius: 2rem;
   border: 1.5px solid white;
   background-color: transparent;
   margin-block-start: 2rem;
+  color: #ffffff;
 }
 @media (max-width: 500px) {
   main .wrapper form fieldset input {
