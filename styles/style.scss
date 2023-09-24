@@ -1,4 +1,4 @@
-@use "./variables";
-@use "./reset";
-@use "./fonts";
-@use "./main";
+@use './variables' as *;
+@use './reset';
+@use './fonts';
+@use './main';

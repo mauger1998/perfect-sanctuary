@@ -1,34 +1,33 @@
-@use "./variables";
+@use './variables' as *;
 
 @font-face {
     font-family: fancy;
-    src: url("../Coldiac.ttf");
+    src: url('../agathiasstenchy.ttf');
+    font-weight: 300;
 }
 
 @font-face {
     font-family: small-text;
-    src: url("../Arial.ttf");
+    src: url('../Arial.ttf');
     font-weight: 700;
 }
-
 
 *,
 *::before,
 *::after {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:small-text, sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: small-text, sans-serif;
 }
 
 // Images & Icons
 
 img {
-    width:100%;
+    width: 100%;
 
     &.icon {
-        width:2rem;
+        width: 2rem;
     }
 }
 // Images & Icons End
@@ -36,14 +35,14 @@ img {
 // Links
 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 // Links End
 
 // List
 ul {
-    list-style:none;
+    list-style: none;
 }
 // List End
 
@@ -53,27 +52,26 @@ section,
 main,
 header,
 footer {
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 
     .wrapper {
-        width:100%;
-        max-width:1440px;
-        padding:8rem 4rem;
+        width: 100%;
+        max-width: 1440px;
+        padding: 8rem 4rem;
     }
 
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
         .wrapper {
-            padding-inline:2rem;
+            padding-inline: 2rem;
         }
     }
-    @media (max-width:500px) {
+    @media (max-width: 500px) {
         .wrapper {
-            padding-inline:1rem;
+            padding-inline: 1rem;
         }
     }
 }
 // Section Layout End
-

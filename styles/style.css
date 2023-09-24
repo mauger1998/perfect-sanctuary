@@ -1,6 +1,7 @@
 @font-face {
   font-family: fancy;
-  src: url("../Coldiac.ttf");
+  src: url("../agathiasstenchy.ttf");
+  font-weight: 300;
 }
 @font-face {
   font-family: small-text;
@@ -68,18 +69,57 @@ footer .wrapper {
 
 h1 {
   font-size: 96px;
-  line-height: 1.1;
+  line-height: 1;
   color: white;
   font-family: fancy;
+  text-align: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   h1 {
-    font-size: clamp(66px, 10vw, 96px);
+    font-size: 48px;
   }
 }
-@media (max-width: 500px) {
-  h1 {
-    font-size: clamp(48px, 12vw, 66px);
+
+h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #111111;
+  font-family: fancy;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  color: #111111;
+  font-family: fancy;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 16px;
+}
+p.tagline {
+  color: #e2bc6f;
+  font-size: 18px;
+  line-height: 1;
+  font-family: fancy;
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 14px;
   }
 }
 
@@ -87,118 +127,18 @@ main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5215686275), rgba(0, 0, 0, 0.5215686275)), url(../public/images/hero-image-transformed.png);
   background-size: cover;
   background-position: bottom;
-  min-height: 95svh;
 }
 main .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
 }
-@media (max-width: 500px) {
-  main .wrapper {
-    gap: 1rem;
-  }
-}
-main .wrapper .title {
-  display: grid;
-  place-items: center;
-}
-main .wrapper .title h1 {
+main .wrapper p:not(.tagline) {
+  color: white;
   text-align: center;
-  max-width: 12ch;
+  font-weight: 300;
 }
-main .wrapper p {
-  color: white;
-  font-family: fancy;
-  font-size: 24px;
-  color: #E2BC6F;
-}
-@media (max-width: 500px) {
-  main .wrapper p {
-    font-size: clamp(20px, 6vw, 24px);
-    text-align: center;
-  }
-}
-main .wrapper form {
-  color: white;
-  margin-block-start: 2rem;
-}
-@media (max-width: 500px) {
-  main .wrapper form {
-    margin-block-start: 1rem;
-  }
-}
-main .wrapper form fieldset {
-  display: grid;
-  gap: 1rem;
-}
-@media (max-width: 500px) {
-  main .wrapper form fieldset {
-    margin-block-start: 0.5rem;
-  }
-}
-main .wrapper form fieldset label {
-  font-size: 24px;
-  max-width: 40ch;
-  text-align: center;
-  font-family: fancy;
-}
-@media (max-width: 500px) {
-  main .wrapper form fieldset label {
-    font-size: 20px;
-  }
-}
-main .wrapper form fieldset input {
-  padding: 0.75rem 0.5rem;
-  border-radius: 2rem;
-  border: 1.5px solid white;
-  background-color: transparent;
-  margin-block-start: 2rem;
-  color: #ffffff;
-}
-@media (max-width: 500px) {
-  main .wrapper form fieldset input {
-    margin-block-start: 0.25rem;
-  }
-}
-main .wrapper form fieldset input::-moz-placeholder {
-  font-family: fancy;
-  color: white;
-}
-main .wrapper form fieldset input::placeholder {
-  font-family: fancy;
-  color: white;
-}
-main .wrapper form fieldset button {
-  font-family: fancy;
-  background-color: transparent;
-  border: none;
-  color: white;
-  margin-block-start: 4rem;
-  position: relative;
-  width: -moz-max-content;
-  width: max-content;
-  place-self: center;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  main .wrapper form fieldset button {
-    margin-block-start: 3rem;
-  }
-}
-main .wrapper form fieldset button::before {
-  content: "";
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  border-right: none;
-  width: 5rem;
-  height: 5rem;
-  aspect-ratio: 1;
-  position: absolute;
-  border-radius: 50%;
-  left: -2.5rem;
-  top: -2.5rem;
+main .wrapper h1 {
+  max-width: 32ch;
 }/*# sourceMappingURL=style.css.map */
